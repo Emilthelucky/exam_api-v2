@@ -1,11 +1,11 @@
 import express from "express";
 import dotenv from "dotenv";
-import { questionRouter } from "./view/questionRoute.js";
-import { ConnectDB } from "./configurations/dbConnection.js";
-import { examRouter } from "./view/examRoute.js";
+import { questionRouter } from "../view/questionRoute.js";
+import { ConnectDB } from "../configurations/dbConnection.js";
+import { examRouter } from "../view/examRoute.js";
 import cors from "cors";
-import { importData } from "./controllers/questionController.js";
-import { userRouter } from "./view/user/userRoute.js";
+import { importData } from "../controllers/questionController.js";
+import { userRouter } from "../view/user/userRoute.js";
 import cookieParser from "cookie-parser";
 
 ConnectDB();
